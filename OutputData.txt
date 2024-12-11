@@ -1,0 +1,561 @@
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-26T23:10:0055
+
+# GLON and GLAT given in degrees
+
+# GLON=59.784312081304
+
+# GLAT=0.20979530387846737
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 16.12227035321851
+Estimated centre for peak 1 = 9.872980628917615
+Estimated std for peak 1 = 14.920846731628426
+-------------------------------------------------
+Estimated height for peak 2 = 5.8655379626413
+Estimated centre for peak 2 = -67.98096043699992
+Estimated std for peak 2 = 9.45832055924037
+-------------------------------------------------
+Maximum Probable Velocity = 54.63552082380289
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-26T23:14:0039
+
+# GLON and GLAT given in degrees
+
+# GLON=79.83759121546994
+
+# GLAT=0.1122944431929991
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+[[ 96.18048464  23.42288449  20.14078377]
+ [  1.86963635 -41.10726383 -74.4254272 ]
+ [ 11.07913342   6.59688821   8.6793972 ]]
+Estimated height for peak 1 = 96.18048464000852
+Estimated centre for peak 1 = 1.8696363481207745
+Estimated std for peak 1 = 11.079133417154583
+-------------------------------------------------
+Estimated height for peak 2 = 23.422884490064988
+Estimated centre for peak 2 = -41.10726383103331
+Estimated std for peak 2 = 6.596888214135677
+-------------------------------------------------
+Estimated height for peak 3 = 20.140783774486316
+Estimated centre for peak 3 = -74.42542720094505
+Estimated std for peak 3 = 8.67939720200564
+-------------------------------------------------
+Maximum Probable Velocity = 35.107036599584525
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-26T23:18:0017
+
+# GLON and GLAT given in degrees
+
+# GLON=99.84334640070655
+
+# GLAT=-0.027949375912477255
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+[[ 49.71800427  28.75692871  10.60992533]
+ [ -4.54190131 -59.483952   -98.32991026]
+ [  8.27549968   8.85225993   3.55067222]]
+Estimated height for peak 1 = 49.71800426702857
+Estimated centre for peak 1 = -4.541901313232528
+Estimated std for peak 1 = 8.275499676987629
+-------------------------------------------------
+Estimated height for peak 2 = 28.75692871070521
+Estimated centre for peak 2 = -59.48395199570558
+Estimated std for peak 2 = 8.852259926420961
+-------------------------------------------------
+Estimated height for peak 3 = 10.609925331403119
+Estimated centre for peak 3 = -98.32991026436291
+Estimated std for peak 3 = 3.550672220501355
+-------------------------------------------------
+Maximum Probable Velocity = 20.284597717730357
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-26T23:23:0053
+
+# GLON and GLAT given in degrees
+
+# GLON=119.8429050601569
+
+# GLAT=-0.14339124458283817
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 59.167505249098795
+Estimated centre for peak 1 = -7.4061023200516045
+Estimated std for peak 1 = 8.219972615153136
+-------------------------------------------------
+Estimated height for peak 2 = 47.914200718140826
+Estimated centre for peak 2 = -54.74979367256251
+Estimated std for peak 2 = 11.786757181753691
+-------------------------------------------------
+Maximum Probable Velocity = 17.253815525407802
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-26T23:28:0041
+
+# GLON and GLAT given in degrees
+
+# GLON=139.82468722629062
+
+# GLAT=-0.22026315743454095
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 48.298945949957535
+Estimated centre for peak 1 = -7.467281007831719
+Estimated std for peak 1 = 7.9466860219072455
+-------------------------------------------------
+Estimated height for peak 2 = 52.3787030444837
+Estimated centre for peak 2 = -41.89029060543347
+Estimated std for peak 2 = 6.888041166224421
+-------------------------------------------------
+Maximum Probable Velocity = 16.372777057890016
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-26T23:32:0036
+
+# GLON and GLAT given in degrees
+
+# GLON=159.8160265101925
+
+# GLAT=-0.26682198429547027
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 83.76883634186218
+Estimated centre for peak 1 = -17.938891274013567
+Estimated std for peak 1 = 17.63438258518231
+-------------------------------------------------
+Maximum Probable Velocity = 34.964256481533354
+
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-26T23:35:0032
+
+# GLON and GLAT given in degrees
+
+# GLON=179.7937099158871
+
+# GLAT=-0.300116044030039
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 129.07744025302125
+Estimated centre for peak 1 = -1.3221087705957133
+Estimated std for peak 1 = 9.775342063436206
+-------------------------------------------------
+Maximum Probable Velocity = 28.003917419712906
+
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-26T23:39:0031
+
+# GLON and GLAT given in degrees
+
+# GLON=199.85628085714458
+
+# GLAT=-0.2967793409486614
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 90.29560646266481
+Estimated centre for peak 1 = 16.98750043919464
+Estimated std for peak 1 = 14.678871524778014
+-------------------------------------------------
+Maximum Probable Velocity = 61.02411501352868
+
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-26T23:42:0053
+
+# GLON and GLAT given in degrees
+
+# GLON=219.80572882147675
+
+# GLAT=-0.2234748923973801
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 62.3014593894549
+Estimated centre for peak 1 = 17.796058883731046
+Estimated std for peak 1 = 10.474264174207619
+-------------------------------------------------
+Estimated height for peak 2 = 55.04575879826967
+Estimated centre for peak 2 = 53.86974258020803
+Estimated std for peak 2 = 12.525092095908828
+-------------------------------------------------
+Maximum Probable Velocity = 91.44501886793452
+
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-26T23:47:0058
+
+# GLON and GLAT given in degrees
+
+# GLON=239.85117421532385
+
+# GLAT=-0.19106351833613913
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 39.60098662067823
+Estimated centre for peak 1 = 19.89345497081382
+Estimated std for peak 1 = 5.547213873991343
+-------------------------------------------------
+Estimated height for peak 2 = 26.569009124657647
+Estimated centre for peak 2 = 67.39003910316725
+Estimated std for peak 2 = 15.281406664122185
+-------------------------------------------------
+Maximum Probable Velocity = 113.23425909553382
+
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-26T23:53:0004
+
+# GLON and GLAT given in degrees
+
+# GLON=69.80187664208317
+
+# GLAT=0.11665230932743452
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 81.40132761287798
+Estimated centre for peak 1 = 3.6227975452266943
+Estimated std for peak 1 = 11.052612666520712
+-------------------------------------------------
+Estimated height for peak 2 = 29.02974546377322
+Estimated centre for peak 2 = -67.78040576781734
+Estimated std for peak 2 = 8.915570318185157
+-------------------------------------------------
+Maximum Probable Velocity = 36.78063554478883
+
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-26T23:56:0005
+
+# GLON and GLAT given in degrees
+
+# GLON=89.87178884276814
+
+# GLAT=0.08038311844250948
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 52.036477810660394
+Estimated centre for peak 1 = -3.2408945088312158
+Estimated std for peak 1 = 8.837630894947436
+-------------------------------------------------
+Maximum Probable Velocity = 23.271998176011092
+
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-26T23:59:0002
+
+# GLON and GLAT given in degrees
+
+# GLON=109.95353742355212
+
+# GLAT=-0.05556924671901576
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 69.51423521633238
+Estimated centre for peak 1 = -5.988847559306875
+Estimated std for peak 1 = 7.64622108328086
+-------------------------------------------------
+Estimated height for peak 2 = 50.597648139330175
+Estimated centre for peak 2 = -51.60567342475646
+Estimated std for peak 2 = 11.55338463194844
+-------------------------------------------------
+Maximum Probable Velocity = 16.949815690535704
+
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-27T00:01:0045
+
+# GLON and GLAT given in degrees
+
+# GLON=129.78713221433924
+
+# GLAT=-0.169481642519893
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 50.29661004367017
+Estimated centre for peak 1 = -6.355349501053257
+Estimated std for peak 1 = 6.893243107494834
+-------------------------------------------------
+Estimated height for peak 2 = 48.56338850692153
+Estimated centre for peak 2 = -49.62827121888111
+Estimated std for peak 2 = 10.74906536536101
+-------------------------------------------------
+Maximum Probable Velocity = 14.324379821431247
+
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-27T00:05:0013
+
+# GLON and GLAT given in degrees
+
+# GLON=149.83985211967993
+
+# GLAT=-0.2353355224483538
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 42.8013326621553
+Estimated centre for peak 1 = -5.923751800845885
+Estimated std for peak 1 = 5.322895759365872
+-------------------------------------------------
+Estimated height for peak 2 = 37.827285149941154
+Estimated centre for peak 2 = -37.96522087284548
+Estimated std for peak 2 = 7.692472792504204
+-------------------------------------------------
+Maximum Probable Velocity = 10.044935477251732
+
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-27T00:08:0034
+
+# GLON and GLAT given in degrees
+
+# GLON=169.86252535040455
+
+# GLAT=-0.32136594737255614
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 110.06031771006899
+Estimated centre for peak 1 = -11.939887563109773
+Estimated std for peak 1 = 12.759612954314129
+-------------------------------------------------
+Maximum Probable Velocity = 26.338951299832615
+
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-27T00:11:0021
+
+# GLON and GLAT given in degrees
+
+# GLON=189.81751629366863
+
+# GLAT=-0.31985344869975324
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 129.070436184066
+Estimated centre for peak 1 = 5.449991646446152
+Estimated std for peak 1 = 10.184616495061915
+-------------------------------------------------
+Maximum Probable Velocity = 36.003841131631894
+
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-27T00:14:0032
+
+# GLON and GLAT given in degrees
+
+# GLON=209.7990585021466
+
+# GLAT=-0.26524684927351855
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 36.54455904321889
+Estimated centre for peak 1 = 11.731389035122106
+Estimated std for peak 1 = 6.777710782630148
+-------------------------------------------------
+Estimated height for peak 2 = 27.885016752027862
+Estimated centre for peak 2 = 40.474463837711305
+Estimated std for peak 2 = 6.261146536368687
+-------------------------------------------------
+Maximum Probable Velocity = 59.257903446817366
+
+
+# BEGINHEADER
+
+# This file contains data from the SALSA 2m radio telescope.
+
+# DATE=2024-11-27T00:17:0013
+
+# GLON and GLAT given in degrees
+
+# GLON=229.9070626209525
+
+# GLAT=-0.20685156902834706
+
+# DATA in two columns below. Col. 1 is velocity relative to LSR [km/s]. Col. 2 is uncalibrated antenna temperature [K].
+
+# ENDHEADER
+
+-----Peaks Estimates-----
+
+
+Estimated height for peak 1 = 27.07017129181526
+Estimated centre for peak 1 = 1.6096502050492014
+Estimated std for peak 1 = 2.444821595973231
+-------------------------------------------------
+Estimated height for peak 2 = 43.06023531388047
+Estimated centre for peak 2 = 18.32098465443342
+Estimated std for peak 2 = 5.291344188967252
+-------------------------------------------------
+Estimated height for peak 3 = 22.17670414954995
+Estimated centre for peak 3 = 42.27949276060124
+Estimated std for peak 3 = 6.538170039867122
+-------------------------------------------------
+Estimated height for peak 4 = 21.990254414718834
+Estimated centre for peak 4 = 69.36815170144553
+Estimated std for peak 4 = 6.237437677989172
+-------------------------------------------------
+Maximum Probable Velocity = 88.08046473541305
