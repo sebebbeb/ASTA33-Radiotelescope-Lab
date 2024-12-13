@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 
 R0 = 8.5  # kpc
 V0 = 220  # km/s
+theta_values = np.linspace(0, 2 * np.pi, 1000)  # Angles in radians
 
 def calculate_R(Vr, l):
     l_rad = np.radians(l)
@@ -67,14 +68,62 @@ for l, Vr in observed_data:
         y_coords.append(y)
 
 plt.style.use('classic')
+# Spiral arm function
+def spiral_arm(theta, R0, k, theta0):
+    return R0 * np.exp(k * (-theta - theta0))
+
+# Parameters for the arms
+k_orion = -0.1
+theta0_orion = np.radians(20)
+k_perseus = -0.23
+theta0_perseus = np.radians(40)
+
+# Compute x, y for the arms
+R_orion = spiral_arm(theta_values, R0, k_orion, theta0_orion)
+x_orion = R_orion * np.cos(theta_values)
+y_orion = R_orion * np.sin(theta_values)
+
+R_perseus = spiral_arm(theta_values, R0, k_perseus, theta0_perseus)
+x_perseus = R_perseus * np.cos(theta_values)
+y_perseus = R_perseus * np.sin(theta_values)
+
+# Function to find the cutoff for the third quadrant (x < 0 and y < 0)
+def find_cutoff(x, y):
+    # Find the index where both x and y become negative
+    cutoff_idx = np.where((x < 0) & (y < 0))[0]
+    if len(cutoff_idx) > 0:
+        return cutoff_idx[0]  # return the first index where this happens
+    return len(x)  # If never negative, return full length
+
+# Find the cutoff indices for both arms
+cutoff_idx_orion = find_cutoff(x_orion, y_orion)
+cutoff_idx_perseus = find_cutoff(x_perseus, y_perseus)
+
+# Limit the data to stop plotting when in the third quadrant
+x_orion_limited = x_orion[:cutoff_idx_orion]
+y_orion_limited = y_orion[:cutoff_idx_orion]
+x_perseus_limited = x_perseus[:cutoff_idx_perseus]
+y_perseus_limited = y_perseus[:cutoff_idx_perseus]
+
+# Plotting the map with arms
 plt.figure(figsize=(10, 10))
-plt.scatter(x_coords, y_coords, c='blue', label='HI clouds')
+plt.scatter(x_coords, y_coords, c='blue', label='HI clouds')  # Observed points
+plt.plot(x_orion_limited, y_orion_limited, color='orange', label='Orion-Cygnus Arm')
+plt.plot(x_perseus_limited, y_perseus_limited, color='green', label='Perseus Arm')
+
+# Add Sun and Galactic center
+plt.scatter(0, 0, color='red', label='Galactic Center', s=100)
+plt.scatter(0, R0, color='yellow', label='Sun', s=100)
+
+# Adjust plot
 plt.axhline(0, color='black', linewidth=0.5)
 plt.axvline(0, color='black', linewidth=0.5)
 plt.gca().set_aspect('equal', adjustable='box')
 plt.xlabel('X (kpc)')
 plt.ylabel('Y (kpc)')
-plt.title('Map of the Milky Way')
-plt.legend()
+plt.xlim(-15, 15)
+plt.ylim(-15, 15)
+plt.title('Map of the Milky Way with Spiral Arms')
+plt.legend(loc='lower right')
 plt.grid(True)
 plt.show()
