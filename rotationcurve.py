@@ -23,9 +23,12 @@ l_radians = np.radians(l_values)
 
 R_values = R_0 * np.sin(l_radians)
 V_values = [V_r + V_0 * np.sin(l) for V_r, l in zip(V_r_max_values, l_radians)]
-V_keplerian_values = [V_0 * np.sqrt(R_0 / R) for R in R_values]
-
 M_enclosed = [(V**2 * R) / G for V, R in zip(V_values, R_values)]
+
+M_central = 5e10  # Solar masses
+
+V_keplerian_values = [np.sqrt(G * M_central / R) for R in R_values]
+
 
 sigma_l_deg = 0.2  
 sigma_l_rad = np.radians(sigma_l_deg)  
@@ -64,10 +67,10 @@ plt.plot(R_values, V_values, linestyle='-', color='b')
 plt.plot(R_values, V_keplerian_values, linestyle='--', color='r', label='V (Keplerian) vs R')
 plt.xlabel('R (kpc)')
 plt.ylabel('V (km/s)')
-plt.ylim(200, 300)
+plt.ylim(0, 300)
 plt.xlim(5.3, 8.6)
 plt.title('Plot of V vs R')
-plt.legend()
+plt.legend(loc='best')
 plt.grid()
 plt.show()
 
