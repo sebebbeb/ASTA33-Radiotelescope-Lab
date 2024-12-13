@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import re
 
 '''
 OLD VALUES
@@ -18,11 +17,15 @@ V_r_errors = [1.830, 1.958, 2.030, 2.518, 2.52, 2.947, 3.930, 3.508, 3.039, 2.69
 
 R_0 = 8.5  # kpc
 V_0 = 220  # km/s
+G = 4.300e-6  # Gravitational constant in kpc km^2 s^-2 M_sun^-1
+
 l_radians = np.radians(l_values)
 
 R_values = R_0 * np.sin(l_radians)
 V_values = [V_r + V_0 * np.sin(l) for V_r, l in zip(V_r_max_values, l_radians)]
 V_keplerian_values = [V_0 * np.sqrt(R_0 / R) for R in R_values]
+
+M_enclosed = [(V**2 * R) / G for V, R in zip(V_values, R_values)]
 
 sigma_l_deg = 0.2  
 sigma_l_rad = np.radians(sigma_l_deg)  
@@ -33,6 +36,11 @@ V_errors = [
     for V_r_err, l in zip(V_r_errors, l_radians)
 ]
 
+M_enclosed_errors = [
+    M_enclosed[i] * np.sqrt((2 * V_errors[i] / V_values[i])**2 + (R_errors[i] / R_values[i])**2)
+    for i in range(len(V_values))
+]
+
 results = pd.DataFrame({
     'l (degrees)': l_values,
     'V_r,max (km/s)': V_r_max_values,
@@ -41,11 +49,14 @@ results = pd.DataFrame({
     'R error (kpc)': R_errors,
     'V (km/s)': V_values,
     'V error (km/s)': V_errors,
-    'V Keplerian (km/s)': V_keplerian_values
+    'V Keplerian (km/s)': V_keplerian_values,
+    'M_enclosed (M_sun)': M_enclosed,
+    'M_enclosed error (M_sun)': M_enclosed_errors
 })
 
 print(results)
 
+# Rotation curve
 plt.style.use('classic')
 plt.figure(figsize=(8, 6))
 plt.errorbar(R_values, V_values, xerr=R_errors, yerr=V_errors, fmt='o', color='b', label='V vs R')
@@ -55,7 +66,17 @@ plt.xlabel('R (kpc)')
 plt.ylabel('V (km/s)')
 plt.ylim(200, 300)
 plt.xlim(5.3, 8.6)
-plt.title('Plot of V vs R with Error Bars')
+plt.title('Plot of V vs R')
 plt.legend()
+plt.grid()
+plt.show()
+
+# Enclosed Mass
+plt.figure(figsize=(8, 6))
+plt.errorbar(R_values, M_enclosed, xerr=R_errors, yerr=M_enclosed_errors, fmt='o', color='g', label='Enclosed Mass (Observed)')
+plt.xlabel('R (kpc)')
+plt.ylabel('Enclosed Mass ($M_{\odot}$)')
+plt.title('Enclosed Mass as a Function of Radius')
+plt.legend(loc='best')
 plt.grid()
 plt.show()
