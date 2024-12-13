@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import re
 
 '''
 OLD VALUES
@@ -14,32 +14,48 @@ OLD VALUES
 
 l_values = [39.8, 42.4, 45.0, 47.6, 49.7, 52.5, 55.0, 57.4, 59.1, 62.4, 64.9, 67.4, 69.8, 72.4, 75.0, 77.3, 79.8, 82.3, 84.8, 87.4, 89.8]
 V_r_max_values = [91.9, 89.9, 87.4, 90.1, 86.6, 84.0, 80.9, 71.4, 62.1, 54.1, 46.5, 42.0, 37.1, 35.1, 33.3, 34.6, 36.4, 35.8, 33.3, 27.3, 16.1]
+V_r_errors = [1.830, 1.958, 2.030, 2.518, 2.52, 2.947, 3.930, 3.508, 3.039, 2.691, 2.379, 2.261, 2.088, 2.063, 1.989, 2.036, 2.184, 2.251, 2.206, 1.800, 0.893] 
 
-R_0 = 8.5  #kpc
-V_0 = 220  #km/s
-
+R_0 = 8.5  # kpc
+V_0 = 220  # km/s
 l_radians = np.radians(l_values)
 
 R_values = R_0 * np.sin(l_radians)
 V_values = [V_r + V_0 * np.sin(l) for V_r, l in zip(V_r_max_values, l_radians)]
+V_keplerian_values = [V_0 * np.sqrt(R_0 / R) for R in R_values]
+
+sigma_l_deg = 0.2  
+sigma_l_rad = np.radians(sigma_l_deg)  
+
+R_errors = R_0 * np.cos(l_radians) * sigma_l_rad
+V_errors = [
+    np.sqrt(V_r_err**2 + (V_0 * np.cos(l) * sigma_l_rad)**2)
+    for V_r_err, l in zip(V_r_errors, l_radians)
+]
 
 results = pd.DataFrame({
     'l (degrees)': l_values,
-    'V_r,max': V_r_max_values,
+    'V_r,max (km/s)': V_r_max_values,
+    'V_r,max error (km/s)': V_r_errors,
     'R (kpc)': R_values,
-    'V (km/s)': V_values
+    'R error (kpc)': R_errors,
+    'V (km/s)': V_values,
+    'V error (km/s)': V_errors,
+    'V Keplerian (km/s)': V_keplerian_values
 })
 
 print(results)
 
 plt.style.use('classic')
 plt.figure(figsize=(8, 6))
-plt.plot(R_values, V_values, marker='o', linestyle='-', color='b', label='V vs R')
+plt.errorbar(R_values, V_values, xerr=R_errors, yerr=V_errors, fmt='o', color='b', label='V vs R')
+plt.plot(R_values, V_values, linestyle='-', color='b')
+plt.plot(R_values, V_keplerian_values, linestyle='--', color='r', label='V (Keplerian) vs R')
 plt.xlabel('R (kpc)')
 plt.ylabel('V (km/s)')
-plt.ylim(0,300)
+plt.ylim(200, 300)
 plt.xlim(5.3, 8.6)
-plt.title('Plot of V vs R')
+plt.title('Plot of V vs R with Error Bars')
 plt.legend()
 plt.grid()
 plt.show()
